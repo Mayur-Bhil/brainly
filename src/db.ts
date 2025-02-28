@@ -67,7 +67,7 @@ const LinkScheama = new Schema({
 export const User = model("User",UserSchema);
 export const Tag = model("Tag",TagScheama);
 export const Content = model("Content",ContentScheama);
-export const Link = model("Link",Link)
+export const Link = model("Link",LinkScheama)
 
 export const connectDB =  async()=>{
     await mongoose.connect("mongodb+srv://mayur:Lpd2854455@mayur.oe53n.mongodb.net/Brainly")
