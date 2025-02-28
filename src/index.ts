@@ -1,8 +1,13 @@
 import express from "express"
 import jwt from "jsonwebtoken"
+import dotenv from "dotenv"
 import { connectDB } from "./db";
 const app = express();
 const port = 3000;
+
+dotenv.config({
+    path:"./src"
+})
 
 app.post("/api/v1/signin",(req,res)=>{
 
